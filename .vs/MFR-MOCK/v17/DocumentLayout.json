@@ -1,0 +1,129 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|c:\\users\\amatkne\\documents\\github\\mfr-mock\\class\\ftp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|solutionrelative:class\\ftp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|c:\\users\\amatkne\\documents\\github\\mfr-mock\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|c:\\users\\amatkne\\documents\\github\\mfr-mock\\sql\\mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|solutionrelative:sql\\mysql.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|c:\\users\\amatkne\\documents\\github\\mfr-mock\\config\\registryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|solutionrelative:config\\registryhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|c:\\users\\amatkne\\documents\\github\\mfr-mock\\class\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|solutionrelative:class\\help.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|c:\\users\\amatkne\\documents\\github\\mfr-mock\\config\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C862A00-3450-4568-8D9E-E0586598BB95}|MFR-MOCK.csproj|solutionrelative:config\\config.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAH8AAAAAAAAAAAAmwJ0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T12:10:05.956Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FTP.cs",
+              "DocumentMoniker": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\class\\FTP.cs",
+              "RelativeDocumentMoniker": "class\\FTP.cs",
+              "ToolTip": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\class\\FTP.cs",
+              "RelativeToolTip": "class\\FTP.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAwwH8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T12:21:07.649Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MySQL.cs",
+              "DocumentMoniker": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\SQL\\MySQL.cs",
+              "RelativeDocumentMoniker": "SQL\\MySQL.cs",
+              "ToolTip": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\SQL\\MySQL.cs",
+              "RelativeToolTip": "SQL\\MySQL.cs",
+              "ViewState": "AQIAADsAAAAAAAAAAAAqwEwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T09:13:22.675Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Help.cs",
+              "DocumentMoniker": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\class\\Help.cs",
+              "RelativeDocumentMoniker": "class\\Help.cs",
+              "ToolTip": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\class\\Help.cs",
+              "RelativeToolTip": "class\\Help.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T11:32:27.597Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Config.cs",
+              "DocumentMoniker": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\config\\Config.cs",
+              "RelativeDocumentMoniker": "config\\Config.cs",
+              "ToolTip": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\config\\Config.cs",
+              "RelativeToolTip": "config\\Config.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAA5wGIAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T12:18:21.666Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegistryHelper.cs",
+              "DocumentMoniker": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\config\\RegistryHelper.cs",
+              "RelativeDocumentMoniker": "config\\RegistryHelper.cs",
+              "ToolTip": "C:\\Users\\amatkne\\Documents\\GitHub\\MFR-MOCK\\config\\RegistryHelper.cs",
+              "RelativeToolTip": "config\\RegistryHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T11:33:21.158Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
