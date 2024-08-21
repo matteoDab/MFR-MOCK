@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MFR-MOCK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5fccdcb05f7359995ace1c74eb57fedaa9c6cd47")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f99610ede5e32d583fd108c7824d33b7d5db0e9b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MFR-MOCK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MFR-MOCK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

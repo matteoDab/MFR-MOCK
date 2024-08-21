@@ -436,7 +436,7 @@ namespace GALEDI.servs
         /// Löscht eine Datei auf dem FTP-Server.
         /// </summary>
         /// <returns>True, wenn die Datei erfolgreich gelöscht wurde, andernfalls False.</returns>
-        private async Task<bool> DeleteFileFromFtpServerAsync(string mfr, string fileName)
+        public async Task<bool> DeleteFileFromFtpServerAsync(string mfr, string fileName)
         {
             FtpWebRequest request = null;
             try

@@ -13,14 +13,17 @@ namespace GALEDI
         // Configuration flags for enabling/disabling timers
         private static bool useTimerDownload = true;
         private static bool useTimerCheckRequest = true;
+        private static bool useTimerDeleteLVS = true;  // New flag for the third timer
 
         // Variables to skip the first execution of each timer
         private static bool timerDownloadINTFirstExecutionSkipped = false;
         private static bool timerCheckRequestFirstExecutionSkipped = false;
+        private static bool timerDeleteLVSFirstExecutionSkipped = false;  // New variable for the third timer
 
         // Timer objects for periodic tasks
         private static Timer timerDownloadINT = null;
         private static Timer timerCheckRequest = null;
+        private static Timer timerDeleteLVS = null;  // New timer object
 
         // Cancellation token source to signal shutdown and control task cancellation
         private static CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
@@ -46,7 +49,11 @@ namespace GALEDI
                 }
                 if (useTimerCheckRequest)
                 {
-                    timerCheckRequest = new Timer(async state => await TimerCallCheckRequest(state), null, 0, 30000); // ???
+                    timerCheckRequest = new Timer(async state => await TimerCallCheckRequest(state), null, 0, 30000);
+                }
+                if (useTimerDeleteLVS)
+                {
+                    timerDeleteLVS = new Timer(async state => await TimerCallDeleteLVS(state), null, 0, 25000);
                 }
 
                 Console.WriteLine("\nPress [Enter] to exit the program.");
@@ -158,12 +165,50 @@ namespace GALEDI
         }
 
         /// <summary>
+        /// New asynchronous timer callback method for the third task.
+        /// Includes logic to handle first execution skipping, exception handling, and cancellation token support.
+        /// </summary>
+        private static async Task TimerCallDeleteLVS(object state)
+        {
+            if (ShouldSkipFirstExecution(ref timerDeleteLVSFirstExecutionSkipped))
+                return;
+
+            try
+            {
+                // Support for cancellation
+                if (cancellationToken.IsCancellationRequested)
+                {
+                    Help.PrintRedLine("Cancellation requested. Exiting TimerCallDeleteLVS.");
+                    return;
+                }
+
+                Console.WriteLine("\n\n--- TimerCallDeleteLVS Start ---\n");
+                Console.WriteLine(DateTime.Now.ToString("HH:mm:ss "));
+
+                var mySQL = new MySQL(Config.LocalSQL_ConnectionString);
+                FTP ftp = new FTP(mySQL);
+
+                // Delete files for both manufacturers
+                bool resultH = await ftp.DeleteFileFromFtpServerAsync(Mfrs.H, "lvs_mfrh.txt");
+                bool resultE = await ftp.DeleteFileFromFtpServerAsync(Mfrs.E, "lvs_mfre.txt");
+
+                Console.WriteLine("\n--- TimerCallDeleteLVS End ---\n");
+            }
+            catch (Exception ex)
+            {
+                Help.PrintRedLine($"An error occurred in {nameof(TimerCallDeleteLVS)}: {ex.Message}");
+            }
+        }
+
+
+        /// <summary>
         /// Disposes the timers and performs any necessary cleanup.
         /// </summary>
         private static void DisposeTimers()
         {
             timerDownloadINT?.Dispose();
             timerCheckRequest?.Dispose();
+            timerDeleteLVS?.Dispose();  // Dispose the new timer
         }
 
         /// <summary>
